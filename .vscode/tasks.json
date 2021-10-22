@@ -22,6 +22,11 @@
       "label": "Run index.js",
       "type": "shell",
       "command": "npx truffle exec --network development ./scripts/index.js"
+    },
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "npx truffle test"
     }
   ]
 }
