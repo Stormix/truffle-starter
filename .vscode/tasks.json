@@ -1,0 +1,27 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "npx truffle compile"
+    },
+    {
+      "label": "Migrate",
+      "type": "shell",
+      "command": "npx truffle migrate --network development"
+    },
+    {
+      "label": "Console",
+      "type": "shell",
+      "command": "npx truffle console --network development"
+    },
+    {
+      "label": "Run index.js",
+      "type": "shell",
+      "command": "npx truffle exec --network development ./scripts/index.js"
+    }
+  ]
+}
